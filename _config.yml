@@ -1,0 +1,82 @@
+# Site settings
+title: Yuan Tang
+SEOTitle: Yuan's Blog
+header-img: img/about-bg.png
+email: terrytangyuan@gmail.com
+description: ""
+keyword: ""
+url: "http://terrytangyuan.github.io"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+plugins: [jekyll-paginate]
+
+# SNS settings
+weibo_username:     5681818134
+zhihu_username:     terrytangyuan
+github_username:    terrytangyuan
+twitter_username:  terrytangyuan
+#facebook_username:  xxx
+email_username:  terrytangyuan@gmail.com
+linkedin_visitor_id: terrytangyuan
+RSS: true
+
+
+# Build settings
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: terrytangyuan
+
+# Duoshuo settings
+duoshuo_username: terrytangyuan
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Live deeply, live fully, and live with love."
+sidebar-avatar: /img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Affliations
+affliations: [
+    {
+        title: "Red Hat",
+        href: "https://www.redhat.com/"
+    },{
+        title: "Argo",
+        href: "https://github.com/argoproj"
+    },{
+        title: "Kubeflow",
+        href: "https://www.kubeflow.org"
+    },{
+        title: "TensorFlow",
+        href: "https://www.tensorflow.org"
+    },{
+        title: "Georgia Institute of Technology",
+        href: "https://gatech.edu"
+    }
+]
